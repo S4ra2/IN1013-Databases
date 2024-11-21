@@ -24,7 +24,6 @@ WHERE restStaff.headwaiter = (
 );
 
 -- 4. List the customer name, the amount they spent, and the waiter’s name for all bills.
--- Order the list by the amount spent, highest bill first.
 SELECT restBill.cust_name, restBill.bill_total, restStaff.first_name, restStaff.surname
 FROM restBill
 JOIN restStaff ON restBill.waiter_no = restStaff.staff_no
